@@ -1,0 +1,25 @@
+
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import CommonHeader from '@/components/common/CommonHeader.tsx'
+import CommonFooter from '@/components/common/CommonFooter.tsx'
+import HeroSection from '@/components/home-page/HeroSection.tsx'
+import FeaturesGrid from '@/components/home-page/FeaturesGrid.tsx'
+import GoodForSection from '@/components/home-page/GoodForSection.tsx'
+import FAQSection from '@/components/home-page/FAQSection.tsx'
+import TipsSection from '@/components/home-page/TipsSection.tsx'
+---
+
+<BaseLayout title="Omegle Web - Talk to Strangers | Free Anonymous Chat">
+  <CommonHeader client:load />
+  
+  <main class="flex flex-col min-h-[calc(100vh-64px)]">
+    <HeroSection client:load />
+    <FeaturesGrid client:idle />
+    <GoodForSection client:idle />
+    <FAQSection client:idle />
+    <TipsSection client:idle />
+  </main>
+
+  <CommonFooter client:idle variant="full" />
+</BaseLayout>

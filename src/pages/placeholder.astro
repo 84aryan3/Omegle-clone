@@ -1,0 +1,29 @@
+
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+---
+
+<BaseLayout title="Page Under Construction - Omegle Web">
+  <div class="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+    <Card className="max-w-md w-full">
+      <CardHeader>
+        <CardTitle className="text-center text-2xl">🚧 Under Construction</CardTitle>
+        <CardDescription className="text-center">
+          This page is currently being built. Check back soon!
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="text-center">
+        <p class="text-muted-foreground mb-4">
+          We're working hard to bring you this feature. In the meantime, head back to the homepage to start chatting.
+        </p>
+        <a 
+          href="./home-page.html" 
+          class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+        >
+          Go to Homepage
+        </a>
+      </CardContent>
+    </Card>
+  </div>
+</BaseLayout>

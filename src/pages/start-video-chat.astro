@@ -1,0 +1,15 @@
+
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import CommonHeader from '@/components/common/CommonHeader.tsx'
+import CommonFooter from '@/components/common/CommonFooter.tsx'
+import StartVideoChat from '@/components/start-video-chat/StartVideoChat.tsx'
+---
+
+<BaseLayout title="Start Video Chat - Omegle Web">
+  <CommonHeader client:load />
+  <main class="flex-1 flex flex-col min-h-[calc(100vh-64px)]">
+    <StartVideoChat client:load />
+  </main>
+  <CommonFooter client:idle variant="minimal" />
+</BaseLayout>
